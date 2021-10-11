@@ -35,15 +35,24 @@ body {
 }
 
 .nav-bg {
+  /*se esta ultilizando un estilo de UTILIDADES para escriir codigo CSS*/
   background-color: var(--secundario);
 }
 .navegacion-principal {
-  padding: 1rem;
   display: flex; /*flex habilita justify content para alinear horizontalmente*/
   justify-content: space-between; /*space-between añade separación entre los elementos*/
 }
 
 .navegacion-principal a {
+  /*se esta ultilizando un estilo de MODULOS para escriir codigo CSS*/
   color: var(--blanco);
   text-decoration: none; /*quitar linea de abajo de link*/
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem; /*para que el fondo ocupe todo el alto*/
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
 }
