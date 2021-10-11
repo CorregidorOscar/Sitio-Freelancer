@@ -28,9 +28,9 @@ body {
 }
 
 .contenedor {
-  width: 120rem;
-  /*centrar elementos*/
+  max-width: 120rem;
 
+  /*centrar elementos*/
   margin: 0 auto;
 }
 
@@ -40,10 +40,20 @@ body {
 }
 .navegacion-principal {
   display: flex; /*flex habilita justify content para alinear horizontalmente*/
-  justify-content: space-between; /*space-between añade separación entre los elementos*/
+  /* por defecto la navegacion seria en columnas*/
+
+  flex-direction: column; /* en resoluciones mayores a 768px muestra en fila*/
 }
 
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between; /*space-between añade separación entre los elementos*/
+  }
+}
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   /*se esta ultilizando un estilo de MODULOS para escriir codigo CSS*/
   color: var(--blanco);
   text-decoration: none; /*quitar linea de abajo de link*/
@@ -55,4 +65,9 @@ body {
 .navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+  h1 {
+  }
 }
