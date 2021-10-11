@@ -39,6 +39,8 @@ body {
 }
 .navegacion-principal {
   padding: 1rem;
+  display: flex; /*flex habilita justify content para alinear horizontalmente*/
+  justify-content: space-between; /*space-between añade separación entre los elementos*/
 }
 
 .navegacion-principal a {
