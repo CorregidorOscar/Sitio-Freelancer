@@ -71,3 +71,9 @@ body {
   h1 {
   }
 }
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat; /*para no repetir la imagen si no ocupa todo el espacio*/
+  background-size: cover; /*se agranda la imagen para coincidir  a lo ancho*/
+}
