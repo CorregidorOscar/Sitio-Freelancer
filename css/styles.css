@@ -38,4 +38,10 @@ body {
   background-color: var(--secundario);
 }
 .navegacion-principal {
+  padding: 1rem;
+}
+
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none; /*quitar linea de abajo de link*/
 }
