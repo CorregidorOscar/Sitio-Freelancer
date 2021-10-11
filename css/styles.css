@@ -12,7 +12,15 @@
 /*permite adaptar tamtañp de texto a todos los dispositivos*/
 html {
   font-size: 62.5%;
+  box-sizing: border-box; /*resolver problema de calcular padding*/
 }
+/*resolver problema de calcular padding, que no excede el tamaño que definimos con weight*/
+*, /* * selecciona todos los elementos de html , aplica las mismas reglas a diferentes selectores*/
+*:before, /*coloca reglas para añadir codigo luego de otro, no se puede inspeccionar en html*/
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-size: 16px; /* 1rem = 10px*/
   font-family: "Krub", sans-serif; /*aplica a todos los elementos de la pagina*/
@@ -76,4 +84,6 @@ body {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat; /*para no repetir la imagen si no ocupa todo el espacio*/
   background-size: cover; /*se agranda la imagen para coincidir  a lo ancho*/
+  height: 410px;
+  padding: 20px;
 }
