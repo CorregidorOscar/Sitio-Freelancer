@@ -190,3 +190,27 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
 }
+
+/* Contacto */
+.formulario {
+  background-color: var(--gris);
+  width: min(
+    60rem,
+    100%
+  ); /*  Utilizar funcion para tomar el valor mas pequeño*/
+  margin: 0 auto; /* se usa porque el padre no es un display flex*/
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none; /*  Quitar borde visible formulario*/
+}
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem; /* separalo del primer input*/
+  color: var(--primario);
+}
