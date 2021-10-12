@@ -157,3 +157,12 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
+/* Servicios */
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1fr=33.3% divide el 100% en 3 fracciones*/
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+}
