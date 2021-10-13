@@ -151,7 +151,7 @@ h3 {
 
 /* Hero */
 .hero {
-  background-image: url(/img/hero.jpg);
+  background-image: url(../img/hero.jpg);
   background-repeat: no-repeat; /*para no repetir la imagen si no ocupa todo el espacio*/
   background-size: cover; /*se agranda la imagen para coincidir  a lo ancho*/
   height: 410px;
@@ -238,7 +238,22 @@ h3 {
   color: var(--primario);
 }
 
-.contenedor-campos {
+@media (min-width: 768px) {
+  .contenedor-campos {
+    display: grid;
+    /* cambia la division de columnas */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+  }
+  /* el siguiente selector, identifica los campo con el label correo y mensaje
+  nthchild COMIENZA EN 1*/
+  .campo:nth-child(3),
+  .campo:nth-child(4) {
+    /* permite ubicar los elementos sobre la disposicion de columnas 
+    ocupando todo el espacio de izq a der*/
+    grid-column: 1 / 3;
+  }
 }
 .campo {
   margin-bottom: 2rem;
@@ -250,6 +265,9 @@ h3 {
   display: block;
 }
 
+.campo textarea {
+  height: 20rem;
+}
 .campo input[type="text"] {
   /* input[type] elegi un input de a cuerdo al tipo*/
 }
@@ -258,4 +276,7 @@ h3 {
   border: none;
   padding: 1.5rem;
   border-radius: 0.5rem;
+}
+
+.footer {
 }
