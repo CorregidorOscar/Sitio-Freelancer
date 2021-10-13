@@ -14,7 +14,19 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; /*Hack Box Model, resolver problema de calcular padding*/
+  /* para que al hacer scroll se centro en ciertos elementos */
+  scroll-snap-type: y mandatory;
 }
+
+/* Scroll Snap
+Que en servicios y navegacion principal se detenga el scroll */
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 /*resolver problema de calcular padding, que no excede el tamaño que definimos con weight*/
 *, /* * selecciona todos los elementos de html , aplica las mismas reglas a diferentes selectores*/
 *:before, /*coloca reglas para añadir codigo luego de otro, no se puede inspeccionar en html*/
@@ -182,6 +194,7 @@ h3 {
 }
 
 /* Servicios */
+
 @media (min-width: 768px) {
   .servicios {
     display: grid;
@@ -279,4 +292,5 @@ h3 {
 }
 
 .footer {
+  text-align: center;
 }
