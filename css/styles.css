@@ -51,12 +51,18 @@ body {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .boton {
     width: auto;
   }
+}
+
+/* para que al pasar sobre el boton enviar salga la manito de hacer click*/
+.boton:hover {
+  cursor: pointer;
 }
 
 .sombra {
@@ -90,6 +96,23 @@ h3 {
 /* Titulos */
 .titulo span {
   font-size: 2rem;
+}
+
+/* Utilidades */
+.w-sm-100 {
+  /* cambiar ancho al 100% del boton enviar */
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.alinear-derecha {
+  justify-content: center;
 }
 
 /* Navegacion Principal */
@@ -213,4 +236,26 @@ h3 {
   font-weight: bold;
   margin-bottom: 2rem; /* separalo del primer input*/
   color: var(--primario);
+}
+
+.contenedor-campos {
+}
+.campo {
+  margin-bottom: 2rem;
+}
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.campo input[type="text"] {
+  /* input[type] elegi un input de a cuerdo al tipo*/
+}
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }

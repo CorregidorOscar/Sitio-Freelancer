@@ -204,26 +204,32 @@
             <div class="contenedor-campos">
               <div class="campo">
                 <label>Nombre</label>
-                <input type="text" placeholder="Tu nombre" />
+                <input class="input-text" type="text" placeholder="Tu nombre" />
               </div>
 
               <div class="campo">
                 <label>Telefono</label>
-                <input type="tel" placeholder="Tu Teléfono" />
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Tu Teléfono"
+                />
               </div>
 
               <div class="campo">
                 <label>Correo</label>
-                <input type="email" placeholder="Tu Email" />
+                <input class="input-text" type="email" placeholder="Tu Email" />
               </div>
 
               <div class="campo">
                 <label>Mensaje</label>
-                <textarea></textarea>
+                <textarea class="input-text"></textarea>
               </div>
             </div>
             <!-- .contenedor-campos-->
-            <div><input type="submit" value="Enviar" /></div>
+            <div class="alinear-derecha flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
+            </div>
           </fieldset>
         </form>
       </section>
