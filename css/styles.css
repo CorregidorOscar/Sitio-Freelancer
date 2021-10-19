@@ -10,10 +10,11 @@
   --fuente-principal: 3.8rem;
 }
 /* Globales */
-/*permite adaptar tamtañp de texto a todos los dispositivos*/
+
 html {
+  /*permite adaptar tamtañp de texto a todos los dispositivos: 1er comando*/
   font-size: 62.5%;
-  box-sizing: border-box; /*Hack Box Model, resolver problema de calcular padding*/
+  box-sizing: border-box; /*Hack Box Model, resolver problema de calcular padding 1ro*/
   /* para que al hacer scroll se centro en ciertos elementos */
   scroll-snap-type: y mandatory;
 }
@@ -27,7 +28,7 @@ Que en servicios y navegacion principal se detenga el scroll */
   scroll-snap-stop: always;
 }
 
-/*resolver problema de calcular padding, que no excede el tamaño que definimos con weight*/
+/*resolver problema de calcular padding, que no excede el tamaño que definimos 2do*/
 *, /* * selecciona todos los elementos de html , aplica las mismas reglas a diferentes selectores*/
 *:before, /*coloca reglas para añadir codigo luego de otro, no se puede inspeccionar en html*/
 *:after {
@@ -35,6 +36,7 @@ Que en servicios y navegacion principal se detenga el scroll */
 }
 
 body {
+  /*permite adaptar tamtañp de texto a todos los dispositivos 2do comando*/
   font-size: 16px; /* 1rem = 10px*/
   font-family: "Krub", sans-serif; /*aplica a todos los elementos de la pagina*/
   background-image: linear-gradient(
@@ -281,9 +283,10 @@ h3 {
 .campo textarea {
   height: 20rem;
 }
-.campo input[type="text"] {
-  /* input[type] elegi un input de a cuerdo al tipo*/
-}
+/* input[type] elegi un input de a cuerdo al tipo*/
+/* .campo input[type="text"] {
+  
+}*/
 .input-text {
   width: 100%;
   border: none;
